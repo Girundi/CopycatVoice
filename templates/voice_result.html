@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Voice Emotion Result</title>
+</head>
+<body>
+<h2>Загрузите аудиофайл:</h2>
+    <form action="/voice/result" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+<p style="display: {{displayment}}"> Result: {{cls}} </p>
+<div>
+    <a href="https://facerecog.miem.tv/voice">Back</a>
+</div>
+</body>
+</html>
